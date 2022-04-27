@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/round_border"
+        android:padding="20dp">
+
+
+        <ImageView
+            android:id="@+id/check"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            app:srcCompat="@drawable/check" />
+
+        <TextView
+            android:id="@+id/txtconfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/check"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="You successfully fill up the form"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txtok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtconfirm"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="ok"
+            android:textColor="@color/app_theme_blue"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

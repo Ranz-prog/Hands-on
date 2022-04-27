@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/round_border"
+        android:padding="20dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/FNameInputlayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            app:boxStrokeColor="@color/app_theme_blue"
+            app:endIconTint="@color/app_theme_blue"
+            app:hintTextColor="@color/app_theme_blue"
+            app:startIconDrawable="@drawable/ic_baseline_person_24"
+            app:startIconTint="@color/app_theme_blue">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/FnameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits=" qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM,."
+                android:fontFamily="@font/montserrat_medium"
+                android:hint="Full Name"
+                android:inputType="textPersonName"
+                android:maxLength="35"
+                android:maxLines="1"
+                android:singleLine="true"
+                app:textInputLayoutFocusedRectEnabled="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/EmailAddInputlayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/FNameInputlayout"
+            android:layout_marginBottom="10dp"
+            app:boxStrokeColor="@color/app_theme_blue"
+            app:endIconTint="@color/app_theme_blue"
+            app:hintTextColor="@color/app_theme_blue"
+            app:startIconDrawable="@drawable/ic_baseline_email_24"
+            app:startIconTint="@color/app_theme_blue">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/EmailAddEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_medium"
+                android:hint="Email Address"
+                android:inputType="textEmailAddress"
+                android:maxLength="30"
+                app:textInputLayoutFocusedRectEnabled="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/MobileInputlayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/EmailAddInputlayout"
+            android:layout_marginBottom="10dp"
+            app:boxStrokeColor="@color/app_theme_blue"
+            app:endIconTint="@color/app_theme_blue"
+            app:hintTextColor="@color/app_theme_blue"
+            app:startIconDrawable="@drawable/ic_baseline_contact_24"
+            app:startIconTint="@color/app_theme_blue">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/MobileEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_medium"
+                android:hint="Mobile Number"
+                android:inputType="number"
+                android:maxLength="11"
+                app:textInputLayoutFocusedRectEnabled="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/DateInputlayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/MobileInputlayout"
+            android:layout_marginBottom="10dp"
+            app:boxStrokeColor="@color/app_theme_blue"
+            app:endIconTint="@color/app_theme_blue"
+            app:hintTextColor="@color/app_theme_blue"
+            app:startIconDrawable="@drawable/ic_baseline_date_range_24"
+            app:startIconTint="@color/app_theme_blue">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/DateEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits=" "
+                android:fontFamily="@font/montserrat_medium"
+                android:hint="- Select a Date -"
+                android:maxLength="11"
+                app:textInputLayoutFocusedRectEnabled="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/AgeInputlayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/DateInputlayout"
+            android:layout_marginBottom="10dp"
+            app:boxStrokeColor="@color/app_theme_blue"
+            app:endIconTint="@color/app_theme_blue"
+            app:hintTextColor="@color/app_theme_blue"
+            app:startIconTint="@color/app_theme_blue">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/AgeEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:enabled="false"
+                android:fontFamily="@font/montserrat_medium"
+                android:hint="Age"
+                android:inputType="number"
+                android:maxLength="11"
+                app:textInputLayoutFocusedRectEnabled="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/txtGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/AgeInputlayout"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Gender" />
+
+        <Spinner
+            android:id="@+id/Gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtGender"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Gender"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Submit" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
